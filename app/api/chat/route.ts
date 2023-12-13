@@ -24,6 +24,8 @@ export async function POST(request: NextRequest) {
 
     const llm = new OpenAI({
       model: "gpt-4",
+      //maxTokens:
+
     });
 
     const chatEngine = await createChatEngine(llm);
